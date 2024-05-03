@@ -1,0 +1,283 @@
+@font-face {
+    font-family: 'Moontime';
+    src: url('fonts/Moontime-Font/MoonTime-Regular.otf') format('opentype'), /* Pour les fichiers OTF */
+         url('fonts/Moontime-Font/MoonTime-Regular.ttf') format('truetype'); /* Pour les fichiers TTF */
+    /* Ajoutez ici d'autres déclarations comme font-weight ou font-style si nécessaire */
+}
+
+a  {
+    text-decoration: none; /* Supprime la soulignement par défaut du lien */
+    cursor: pointer; /* Curseur de souris de type pointer */
+}
+
+body{
+    font-family: 'Alice', sans-serif;
+    display: block;
+    background-color: #f5eddd;
+    color:#82401d;
+    margin: 0px;
+}
+
+header {
+    display: flex; /* Utilisez flexbox pour aligner les éléments horizontalement */
+    flex-direction: column; /* Empilez les éléments verticalement */
+    align-items: center; /* Centrez les éléments horizontalement */
+    background-color: #f5eddd;
+    position: fixed;
+    width: 100%; /* Fait en sorte que la navigation occupe toute la largeur */
+    top: 0px;
+}
+
+.bandeau-haut {
+    background-image: url(Img/Bandeau.jpg);
+    background-size: 100% auto;
+    background-position-y: 53%;
+    background-position-x: 80%;
+    cursor: pointer;
+    color: black;
+    height: 200px;
+    margin: 0;
+    width: 100%;
+    border-bottom: 5px solid #C4A591;
+    display: flex; /* Utiliser Flexbox */
+    align-items: flex-end; /* Aligner verticalement au bas */
+    justify-content: flex-end; /* Aligner horizontalement à droite */
+    text-align: right; /* Aligner le contenu à droite */
+    flex-direction: column; /* Pour afficher les éléments verticalement */
+    padding-bottom: 10px;
+}
+
+.bandeau-haut .logo{
+    background-color: #f5eddd;
+    width: 200px;
+    padding-right: 10px;
+    margin-right: 10px;
+    size:50px;
+    background-repeat: no-repeat; /* Empêcher la répétition du fond */
+}
+
+.bandeau-haut p{
+    font-family: 'Alice', sans-serif;
+    color: black;
+    margin: 0px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    background-color: #f5eddd;
+    width: 200px
+}
+
+
+nav {
+    top: 200px; /* Positionne la navigation 200px en bas du haut de la fenêtre */
+    width: 100%; /* Fait en sorte que la navigation occupe toute la largeur */
+    z-index: 1000; /* Assure que la navigation reste au-dessus du contenu */
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5eddd;
+    width: 100%;
+    border-bottom: 5px solid #C4A591;
+}
+
+nav a{
+    color: black;
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+nav a:hover{
+    font-size: 38px;
+}
+
+.main{
+    margin-left: 177px;
+    margin-right: 177px;
+    margin-top: 300px;
+    text-align: center;
+}
+
+h1{
+    font-size: 75px;
+    font-family: 'Great Vibes', sans-serif;
+    margin: 10px;
+    margin-top: 20px;
+}
+
+.bouton-photo {
+    display: inline-block; /* Affiche le lien comme un bloc */
+    margin: 5px;
+    font-size: 24px;
+    color:#82401d;
+    border: none; /* Supprime le style de bordure par défaut du lien */
+    padding: 10px 20px; /* Ajoute un espacement interne pour le texte */
+    font-weight: bold; /* Gras pour le texte */
+    text-align: center; /* Centre le texte horizontalement */
+    text-decoration: none; /* Supprime la soulignement par défaut du lien */
+    cursor: pointer; /* Curseur de souris de type pointer */
+    width: 400px;
+    height: 400px;
+    overflow: hidden; /* Cache toute partie de l'image qui dépasse du cadre */
+    transition: background-size 0.3s ease; /* Ajoute une transition fluide */
+}
+
+.bouton-parfums{
+    background-image: url(Img/Flacon-parfum-femme.jpg);
+    background-size: 140% auto;
+    background-position-y: 15% ;
+    background-position-x: center;
+}
+
+.bouton-parfums:hover {
+    background-size: 150%;
+}
+
+.bouton-rechargeable{
+    background-image: url(Img/rechargeable.jpg);
+    background-size: 120% auto;
+    background-position-y: 55% ;
+    background-position-x: center;
+}
+
+.bouton-rechargeable:hover {
+    background-size: 130%;
+}
+
+.bouton-ambiance{
+    background-image: url(Img/ambiance.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center;
+}
+
+.bouton-ambiance:hover {
+    background-size: 110%;
+}
+
+.bouton-autres{
+    background-image: url(Img/autres.jpg);
+    background-size: 120% auto;
+    background-position-y: 42% ;
+    background-position-x: center;
+}
+
+.bouton-autres:hover {
+    background-size: 130%;
+}
+
+.bouton-solaire{
+    background-image: url(Img/solaire.jpg);
+    background-size: 120% auto;
+    background-position-y: 42% ;
+    background-position-x: center;
+}
+
+.bouton-solaire:hover {
+    background-size: 130%;
+}
+
+.bouton-shampoing{
+    background-image: url(Img/shampoing.jpg);
+    background-size: 150% auto;
+    background-position-y: 42% ;
+    background-position-x: center;
+}
+
+.bouton-shampoing:hover {
+    background-size: 160%;
+}
+
+.bouton-make-up{
+    background-image: url(Img/make-up.jpg);
+    background-size: 100% auto;
+    background-position-y: 55% ;
+    background-position-x: center;
+}
+
+.bouton-make-up:hover {
+    background-size: 110%;
+}
+
+.bouton-menager{
+    background-image: url(Img/menager.jpg);
+    background-size: 100% auto;
+    background-position-y: 55% ;
+    background-position-x: center;
+}
+
+.bouton-menager:hover {
+    background-size: 110%;
+}
+
+.bouton-routine{
+    background-image: url(Img/routine.jpg);
+    background-size: 325% auto;
+    background-position-y: 30% ;
+    background-position-x: 82%;
+}
+
+.bouton-routine:hover {
+    background-size: 355%;
+}
+
+.bouton-famille{
+    background-image: url(Img/famille.jpg);
+    background-size: 130% auto;
+    background-position-y: 50% ;
+    background-position-x: 80%;
+}
+
+.bouton-famille:hover {
+    background-size: 140%;
+}
+
+.bouton-concentration{
+    background-image: url(Img/concentration.jpg);
+    background-size: 150% auto;
+    background-position-y: 50% ;
+    background-position-x: 50%;
+}
+
+.bouton-concentration:hover {
+    background-size: 160%;
+}
+
+.button-text {
+    width: 500px;
+    top: 50%; /* Place le texte au milieu verticalement */
+    left: 50%; /* Place le texte au milieu horizontalement */
+    transform: translate(-50%, -50%); /* Centre le texte par rapport au milieu du bouton */
+    z-index: 1; /* Assure que le texte est au-dessus de l'image de fond */
+}
+
+.image-catalogue{
+    width: 80%; /* l'image prend toute la largeur du conteneur */   
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 3px solid #C4A591;
+    height: 65px;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 2px;
+}
+
+.texte p {
+    font-family: 'Alice', sans-serif;
+    color: black;
+    margin: 0;
+    margin-left: 10px; /* Espacement entre le logo et les textes */
+    background-color: #f5eddd;
+    width: 200px; /* Largeur des textes */
+    
+}
