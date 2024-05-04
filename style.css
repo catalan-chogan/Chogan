@@ -38,7 +38,7 @@ header {
     height: 200px;
     margin: 0;
     width: 100%;
-    border-bottom: 5px solid #C4A591;
+    border-bottom: 3px solid #C4A591;
     display: flex; /* Utiliser Flexbox */
     align-items: flex-end; /* Aligner verticalement au bas */
     justify-content: flex-end; /* Aligner horizontalement à droite */
@@ -73,18 +73,18 @@ nav {
     top: 200px; /* Positionne la navigation 200px en bas du haut de la fenêtre */
     width: 100%; /* Fait en sorte que la navigation occupe toute la largeur */
     z-index: 1000; /* Assure que la navigation reste au-dessus du contenu */
-    height: 40px;
+    height: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #f5eddd;
     width: 100%;
-    border-bottom: 5px solid #C4A591;
+    border-bottom: 3px solid #C4A591;
 }
 
 nav a{
     color: black;
-    font-size: 35px;
+    font-size: 25px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -92,6 +92,24 @@ nav a{
 nav a:hover{
     font-size: 38px;
 }
+
+.nav-tel{
+    display: none;
+}
+
+.nav-tel .logo{
+    position: absolute;
+    top: 210px;
+    left: 100px;
+    height: 35px;
+}
+.nav-tel .menu-hamburger{
+    position: absolute;
+    top: 212px;
+    left: 50px;
+    width: 35px;
+}
+
 
 .main{
     margin-left: 177px;
@@ -280,4 +298,13 @@ footer {
     background-color: #f5eddd;
     width: 200px; /* Largeur des textes */
     
+}
+
+@media screen and (max-width: 900px) {
+    .nav-pc{
+        display: none;
+    }
+    .nav-tel{
+        display: block;
+    }
 }
