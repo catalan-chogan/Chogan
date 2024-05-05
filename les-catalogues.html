@@ -24,12 +24,29 @@
         </div>
     
         <nav>
-            <a href="index.html" class="bouton-bandeau">ACCUEIL</a>
-            <a href="les-catalogues.html" class="bouton-bandeau">LES CATALOGUES</a>
-            <a href="les-guides.html" class="bouton-bandeau">LES GUIDES</a>
-            <a href="bon-de-commande.html" class="bouton-bandeau">BON DE COMMANDE</a>
+            <div class="nav-links">
+                <a href="index.html" class="bouton-bandeau">ACCUEIL</a>
+                <a href="les-catalogues.html" class="bouton-bandeau">LES CATALOGUES</a>
+                <a href="les-guides.html" class="bouton-bandeau">LES GUIDES</a>
+                <a href="bon-de-commande.html" class="bouton-bandeau">BON DE COMMANDE</a>
+            </div>
+            <div class="nav-tel">
+                <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo">
+                <img src="Img/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+            </div>
         </nav>
+
+        
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks=document.querySelector(".nav-links")
+
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
     </header>
+
 
     <section class="main" >
 

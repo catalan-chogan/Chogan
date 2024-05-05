@@ -5,7 +5,11 @@
     /* Ajoutez ici d'autres déclarations comme font-weight ou font-style si nécessaire */
 }
 
-
+:root{
+    --clair: #f5eddd;
+    --intermediare: #C4A591;
+    --fonce: #82401d;
+}
 
 a  {
     text-decoration: none; /* Supprime la soulignement par défaut du lien */
@@ -15,7 +19,7 @@ a  {
 body{
     font-family: 'Alice', sans-serif;
     display: block;
-    background-color: #f5eddd;
+    background-color: var(--clair);
     color:#82401d;
     margin: 0px;
     width: 100%;
@@ -24,16 +28,19 @@ body{
 }
 
 header {
+    position: relative;
+    z-index: 1003;
     display: flex; /* Utilisez flexbox pour aligner les éléments horizontalement */
     flex-direction: column; /* Empilez les éléments verticalement */
     align-items: center; /* Centrez les éléments horizontalement */
-    background-color: #f5eddd;
+    background-color: var(--clair);
     position: fixed;
     width: 100%; /* Fait en sorte que la navigation occupe toute la largeur */
     top: 0px;
 }
 
 .bandeau-haut {
+
     background-image: url(Img/Bandeau.jpg);
     background-size: 100% auto;
     background-position-y: 53%;
@@ -43,7 +50,7 @@ header {
     height: 200px;
     margin: 0;
     width: 100%;
-    border-bottom: 3px solid #C4A591;
+    border-bottom: 3px solid var(--intermediare);
     display: flex; /* Utiliser Flexbox */
     align-items: flex-end; /* Aligner verticalement au bas */
     justify-content: flex-end; /* Aligner horizontalement à droite */
@@ -54,7 +61,7 @@ header {
 }
 
 .bandeau-haut .logo{
-    background-color: #f5eddd;
+    background-color: var(--clair);
     width: 200px;
     padding-right: 10px;
     margin-right: 10px;
@@ -70,7 +77,7 @@ header {
     padding-right: 10px;
     padding-top: 2.5px;
     padding-bottom: 2.5px;
-    background-color: #f5eddd;
+    background-color: var(--clair);
     width: 200px
 }
 
@@ -83,9 +90,9 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #f5eddd;
+    background-color: var(--clair);
     width: 100%;
-    border-bottom: 3px solid #C4A591;
+    border-bottom: 3px solid var(--intermediare);
 }
 
 nav a{
@@ -132,14 +139,16 @@ h1{
 }
 
 .bouton-photo {
+    z-index: 998;
+    position: relative;
     display: inline-block; /* Affiche le lien comme un bloc */
     margin: 0.22%;
     font-size: 24px;
     /*color:#82401d;*/
-    color: #C4A591;
+    color: var(--fonce);
     border: none; /* Supprime le style de bordure par défaut du lien */
     padding: 10px 20px; /* Ajoute un espacement interne pour le texte */
-    font-weight: bold; /* Gras pour le texte */
+    /*font-weight: bold;*/ /* Gras pour le texte */
     text-align: center; /* Centre le texte horizontalement */
     text-decoration: none; /* Supprime la soulignement par défaut du lien */
     cursor: pointer; /* Curseur de souris de type pointer */
@@ -148,13 +157,22 @@ h1{
     height: 300px;
     overflow: hidden; /* Cache toute partie de l'image qui dépasse du cadre */
     transition: background-size 0.3s ease; /* Ajoute une transition fluide */
+    color: var(--clair);
 }
 
+.bouton-photo .texte {
+    position: absolute;
+    /*bottom: 10px; /* Ajustez cette valeur selon vos besoins */
+    text-align: left; /* Pour centrer le texte horizontalement */
+}
+
+
 .bouton-parfums{
-    background-image: url(Img/Flacon-parfum-femme.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/Flacon-parfum-femme.jpg);
     background-size: 140% auto;
     background-position-y: 15% ;
     background-position-x: center;
+    
 }
 
 .bouton-parfums:hover {
@@ -162,10 +180,11 @@ h1{
 }
 
 .bouton-rechargeable{
-    background-image: url(Img/rechargeable.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/rechargeable.jpg);
     background-size: 120% auto;
     background-position-y: 55% ;
     background-position-x: center;
+    color: var(--clair);
 }
 
 .bouton-rechargeable:hover {
@@ -173,7 +192,7 @@ h1{
 }
 
 .bouton-ambiance{
-    background-image: url(Img/ambiance.jpg);
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/ambiance.jpg);
     background-size: 100% auto;
     background-position-y: 15% ;
     background-position-x: center;
@@ -184,7 +203,7 @@ h1{
 }
 
 .bouton-autres{
-    background-image: url(Img/autres.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/autres.jpg);
     background-size: 120% auto;
     background-position-y: 42% ;
     background-position-x: center;
@@ -195,7 +214,7 @@ h1{
 }
 
 .bouton-solaire{
-    background-image: url(Img/solaire.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/solaire.jpg);
     background-size: 120% auto;
     background-position-y: 42% ;
     background-position-x: center;
@@ -206,7 +225,7 @@ h1{
 }
 
 .bouton-shampoing{
-    background-image: url(Img/shampoing.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/shampoing.jpg);
     background-size: 150% auto;
     background-position-y: 42% ;
     background-position-x: center;
@@ -217,7 +236,7 @@ h1{
 }
 
 .bouton-make-up{
-    background-image: url(Img/make-up.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/make-up.jpg);
     background-size: 100% auto;
     background-position-y: 55% ;
     background-position-x: center;
@@ -228,7 +247,7 @@ h1{
 }
 
 .bouton-menager{
-    background-image: url(Img/menager.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/menager.jpg);
     background-size: 100% auto;
     background-position-y: 55% ;
     background-position-x: center;
@@ -239,7 +258,7 @@ h1{
 }
 
 .bouton-routine{
-    background-image: url(Img/routine.jpg);
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/routine.jpg);
     background-size: 325% auto;
     background-position-y: 30% ;
     background-position-x: 82%;
@@ -250,7 +269,7 @@ h1{
 }
 
 .bouton-famille{
-    background-image: url(Img/famille.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/famille.jpg);
     background-size: 130% auto;
     background-position-y: 50% ;
     background-position-x: 80%;
@@ -261,7 +280,7 @@ h1{
 }
 
 .bouton-concentration{
-    background-image: url(Img/concentration.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/concentration.jpg);
     background-size: 150% auto;
     background-position-y: 50% ;
     background-position-x: 50%;
@@ -287,7 +306,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 3px solid #C4A591;
+    border-top: 3px solid var(--intermediare);
     height: 65px;
 }
 
@@ -303,7 +322,7 @@ footer {
     color: black;
     margin: 0;
     margin-left: 10px; /* Espacement entre le logo et les textes */
-    background-color: #f5eddd;
+    background-color: var(--clair);
     width: 200px; /* Largeur des textes */
     
 }
@@ -336,7 +355,7 @@ footer {
     .nav-tel{
         display: block;
         z-index: 999;
-        border-bottom: 3px solid #C4A591;    
+        border-bottom: 3px solid var(--intermediare)1;    
     }
 
     .bouton-photo {
