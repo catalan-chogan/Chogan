@@ -5,6 +5,8 @@
     /* Ajoutez ici d'autres déclarations comme font-weight ou font-style si nécessaire */
 }
 
+
+
 a  {
     text-decoration: none; /* Supprime la soulignement par défaut du lien */
     cursor: pointer; /* Curseur de souris de type pointer */
@@ -16,6 +18,9 @@ body{
     background-color: #f5eddd;
     color:#82401d;
     margin: 0px;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden; /* Pour éviter le débordement horizontal */
 }
 
 header {
@@ -45,6 +50,7 @@ header {
     text-align: right; /* Aligner le contenu à droite */
     flex-direction: column; /* Pour afficher les éléments verticalement */
     padding-bottom: 10px;
+    z-index: 1002;
 }
 
 .bandeau-haut .logo{
@@ -72,7 +78,7 @@ header {
 nav {
     top: 200px; /* Positionne la navigation 200px en bas du haut de la fenêtre */
     width: 100%; /* Fait en sorte que la navigation occupe toute la largeur */
-    z-index: 1000; /* Assure que la navigation reste au-dessus du contenu */
+    z-index: 1001; /* Assure que la navigation reste au-dessus du contenu */
     height: 30px;
     display: flex;
     align-items: center;
@@ -112,8 +118,8 @@ nav a:hover{
 
 
 .main{
-    margin-left: 177px;
-    margin-right: 177px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 300px;
     text-align: center;
 }
@@ -121,23 +127,25 @@ nav a:hover{
 h1{
     font-size: 75px;
     font-family: 'Great Vibes', sans-serif;
-    margin: 10px;
+    margin: 2px;
     margin-top: 20px;
 }
 
 .bouton-photo {
     display: inline-block; /* Affiche le lien comme un bloc */
-    margin: 5px;
+    margin: 0.22%;
     font-size: 24px;
-    color:#82401d;
+    /*color:#82401d;*/
+    color: #C4A591;
     border: none; /* Supprime le style de bordure par défaut du lien */
     padding: 10px 20px; /* Ajoute un espacement interne pour le texte */
     font-weight: bold; /* Gras pour le texte */
     text-align: center; /* Centre le texte horizontalement */
     text-decoration: none; /* Supprime la soulignement par défaut du lien */
     cursor: pointer; /* Curseur de souris de type pointer */
-    width: 400px;
-    height: 400px;
+    /*width: 26%;*/
+    width: 300px  ;
+    height: 300px;
     overflow: hidden; /* Cache toute partie de l'image qui dépasse du cadre */
     transition: background-size 0.3s ease; /* Ajoute une transition fluide */
 }
@@ -300,11 +308,44 @@ footer {
     
 }
 
+.nav-links.mobile-menu{
+    margin-left: 0;
+    padding-left: 50px;
+}
+
 @media screen and (max-width: 900px) {
-    .nav-pc{
-        display: none;
+    .nav-links{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        padding: 0px;
+        top: 245px;
+        left: 0px;
+        background-color:rgba(245, 237, 221, 0.6);
+        backdrop-filter: blur(7px); 
+        margin-left: -150%;
+        transition: all 0.5s ease;
     }
+
+    .nav-links a{
+        margin: 15px 0;
+    }
+
     .nav-tel{
         display: block;
+        z-index: 999;
+        border-bottom: 3px solid #C4A591;    
+    }
+
+    .bouton-photo {
+        width: 90%;
+        height: 100px;
+        margin: 10px 10px;
+    }
+
+    h1{
+        font-size: 40px;
     }
 }
