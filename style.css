@@ -132,7 +132,7 @@ nav a:hover{
 .main{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 300px;
+    margin-top: 210px;
     text-align: center;
     margin-bottom: 75px; /* Hauteur du footer */
 }
@@ -356,7 +356,7 @@ footer {
         width: 100%;
         height: 100vh;
         padding: 0px;
-        top: 245px;
+        top: 200px;
         left: 0px;
         background-color:rgba(245, 237, 221, 0.6);
         backdrop-filter: blur(7px); 
