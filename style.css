@@ -5,6 +5,11 @@
     /* Ajoutez ici d'autres déclarations comme font-weight ou font-style si nécessaire */
 }
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 :root{
     --clair: #f5eddd;
     --intermediare: #C4A591;
@@ -20,7 +25,7 @@ body{
     font-family: 'Alice', sans-serif;
     display: block;
     background-color: var(--clair);
-    color:#82401d;
+    color:var(--fonce);
     margin: 0px;
     width: 100%;
     max-width: 100%;
@@ -40,7 +45,6 @@ header {
 }
 
 .bandeau-haut {
-
     background-image: url(Img/Bandeau.jpg);
     background-size: 100% auto;
     background-position-y: 53%;
@@ -56,7 +60,8 @@ header {
     justify-content: flex-end; /* Aligner horizontalement à droite */
     text-align: right; /* Aligner le contenu à droite */
     flex-direction: column; /* Pour afficher les éléments verticalement */
-    padding-bottom: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
     z-index: 1002;
 }
 
@@ -103,7 +108,7 @@ nav a{
 }
 
 nav a:hover{
-    font-size: 38px;
+    font-size: 28px;
 }
 
 .nav-tel{
@@ -112,14 +117,14 @@ nav a:hover{
 
 .nav-tel .logo{
     position: absolute;
-    top: 210px;
-    left: 100px;
+    top: 165px;
+    left: 50px;
     height: 35px;
 }
 .nav-tel .menu-hamburger{
     position: absolute;
-    top: 212px;
-    left: 50px;
+    top: 167px;
+    left: 10px;
     width: 35px;
 }
 
@@ -129,6 +134,7 @@ nav a:hover{
     margin-right: 10%;
     margin-top: 300px;
     text-align: center;
+    margin-bottom: 75px; /* Hauteur du footer */
 }
 
 h1{
@@ -144,15 +150,12 @@ h1{
     display: inline-block; /* Affiche le lien comme un bloc */
     margin: 0.22%;
     font-size: 24px;
-    /*color:#82401d;*/
     color: var(--fonce);
     border: none; /* Supprime le style de bordure par défaut du lien */
     padding: 10px 20px; /* Ajoute un espacement interne pour le texte */
-    /*font-weight: bold;*/ /* Gras pour le texte */
     text-align: center; /* Centre le texte horizontalement */
     text-decoration: none; /* Supprime la soulignement par défaut du lien */
     cursor: pointer; /* Curseur de souris de type pointer */
-    /*width: 26%;*/
     width: 300px  ;
     height: 300px;
     overflow: hidden; /* Cache toute partie de l'image qui dépasse du cadre */
@@ -162,7 +165,6 @@ h1{
 
 .bouton-photo .texte {
     position: absolute;
-    /*bottom: 10px; /* Ajustez cette valeur selon vos besoins */
     text-align: left; /* Pour centrer le texte horizontalement */
 }
 
@@ -303,6 +305,9 @@ h1{
 }
 
 footer {
+    position: absolute;;
+    width: 100%;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -333,6 +338,17 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
+    .main{
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .bandeau-haut {
+        height: 155px;
+        background-size:900px auto ;
+        background-position-x: 80%;
+    }
+
     .nav-links{
         position: absolute;
         display: flex;
@@ -355,16 +371,26 @@ footer {
     .nav-tel{
         display: block;
         z-index: 999;
-        border-bottom: 3px solid var(--intermediare)1;    
+        border-bottom: 3px solid var(--intermediare);    
     }
 
     .bouton-photo {
         width: 90%;
         height: 100px;
-        margin: 10px 10px;
+        margin: 5px 0px;
     }
 
     h1{
         font-size: 40px;
     }
+
+    .bouton-parfums{
+        background-position-y: 25% ;
+    }
+
+    .bouton-ambiance{
+        background-position-y: 50% ;
+    }
+
+
 }
