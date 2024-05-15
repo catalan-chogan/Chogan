@@ -132,9 +132,15 @@ nav a:hover{
 .main{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 210px;
+    margin-top: 260px;
     text-align: center;
     margin-bottom: 75px; /* Hauteur du footer */
+}
+
+body .main-colonne{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
@@ -143,6 +149,59 @@ h1{
     margin: 2px;
     margin-top: 20px;
 }
+
+.presentation-chogan p{
+    text-align: left;
+    margin: 5px 0;
+}
+
+.presentation-chogan img{
+    margin: 20px 0;
+    border: 2px solid var(--fonce);
+}
+
+.presentation-chogan{
+    margin-bottom: 40px;
+}
+
+.bouton-accueil {
+    z-index: 998;
+    position: relative;
+    display: inline-block; /* Affiche le lien comme un bloc */
+    margin: 0.22%;
+    font-size: 24px;
+    color: var(--fonce);
+    border: none; /* Supprime le style de bordure par défaut du lien */
+    padding: 10px 20px; /* Ajoute un espacement interne pour le texte */
+    text-align: center; /* Centre le texte horizontalement */
+    text-decoration: none; /* Supprime la soulignement par défaut du lien */
+    cursor: pointer; /* Curseur de souris de type pointer */
+    width: 100%  ;
+    height: 150px;
+    overflow: hidden; /* Cache toute partie de l'image qui dépasse du cadre */
+    transition: background-size 0.3s ease; /* Ajoute une transition fluide */
+    color: var(--clair);
+}
+
+.bouton-accueil .texte {
+    position: absolute;
+    text-align: left; /* Pour centrer le texte horizontalement */
+}
+
+.bouton-catalogues{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/catalogues.jpg);
+    background-size: 120% auto;
+    background-position-y: 70% ;
+    background-position-x: 100%;  
+}
+
+.bouton-guides{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/guides.jpg);
+    background-size: 100% auto;
+    background-position-y: 50% ;
+    background-position-x: center;  
+}
+
 
 .bouton-photo {
     z-index: 998;
@@ -301,7 +360,7 @@ h1{
 }
 
 .image-catalogue{
-    width: 80%; /* l'image prend toute la largeur du conteneur */   
+    width: 80%; /* l'image prend 80% de la largeur du conteneur */   
 }
 
 footer {
@@ -337,10 +396,21 @@ footer {
     padding-left: 50px;
 }
 
+button {
+    font-family: 'Alice', sans-serif;
+    font-size: 35px;
+    color: black;
+    background-color: var(--clair);
+    border: var(--intermediare) solid 2px;
+    margin: 20px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 900px) {
     .main{
         margin-left: 2%;
         margin-right: 2%;
+        margin-top: 210px;
     }
 
     .bandeau-haut {
@@ -372,6 +442,11 @@ footer {
         display: block;
         z-index: 999;
         border-bottom: 3px solid var(--intermediare);    
+    }
+
+    .presentation-chogan img{
+        width: 90%;
+        height: auto;
     }
 
     .bouton-photo {
