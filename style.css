@@ -232,8 +232,7 @@ h1{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/Flacon-parfum-femme.jpg);
     background-size: 140% auto;
     background-position-y: 15% ;
-    background-position-x: center;
-    
+    background-position-x: center; 
 }
 
 .bouton-parfums:hover {
@@ -316,6 +315,28 @@ h1{
 
 .bouton-menager:hover {
     background-size: 110%;
+}
+
+.bouton-cosmetique{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/cosmetique.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-cosmetique:hover {
+    background-size: 150%;
+}
+
+.bouton-huiles-essentielles{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/huiles-essentielles.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-huiles-essentielles:hover {
+    background-size: 150%;
 }
 
 .bouton-routine{
