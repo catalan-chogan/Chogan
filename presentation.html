@@ -1,0 +1,98 @@
+<html lang="fr">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chogan</title>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Alice&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="icon" href="Img/logo-simple-rose.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="bandeau-haut">
+            <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo" width="150px">
+            <p>Votre conseillère</p>
+            <p>Vanessa CATALAN</p>
+            <p>06.27.51.22.56</p>
+            <p>vanessa.lafaurie@yahoo.fr</p>
+        </div>
+    
+        <nav>
+            <div class="nav-links">
+                <a href="presentation.html" class="bouton-bandeau">CHOGAN</a>
+                <a href="index.html" class="bouton-bandeau">LES CATALOGUES</a>
+                <a href="les-guides.html" class="bouton-bandeau">LES GUIDES</a>
+                <a href="bon-de-commande.html" class="bouton-bandeau">BON DE COMMANDE</a>
+                <a href="vendeur.html" class="bouton-bandeau">DEVENIR VENDEUR CHOGAN</a>
+            </div>
+            <div class="nav-tel">
+                <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo">
+                <img src="Img/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+            </div>
+        </nav>
+
+        
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks=document.querySelector(".nav-links")
+
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </header>
+
+
+    <section class="main" >
+        <h1>Chogan</h1>
+        <div class="presentation-chogan">
+            <p>Fondée en 2013 par Michelangelo Paradiso, le groupe Chogan a connu une croissance remarquable et s’impose aujourd’hui comme une référence dans le monde
+                du parfum et des produits cosmétiques, réalisant un chiffre d’affaires de 315 millions d’euros en 2023. Cette réussite s'appuye sur un engagement de la société
+                envers l’excellence et de la confiance que ses clients et distributeurs accordent à ses produits.</p>
+
+            <h1>Les parfums</h1>
+
+            <p>Je vais vous expliquer ici les concepts dérrières les parfums Chogan.</p>
+            <p>Pour bien comprendre le résonnement dérrière cette proposition, commençons par analyser la répartition des coûts sur un flacon vendu via les schemas traditionnels:</p>
+            <img src="Img/couts.png" alt="image-couts" height="300px">
+            <p>Ces chiffres varient évidemment en fonction des produits mais donnent un bon ordre d'idée de la répartition des coûts. Ils nous permettent d'observer que la partie active ne représente que 3% du prix.</p>
+            <p>C'est en partant de ce constat que Chogan a décidé de créer une nouvelle offre en travailant à réduire les coûts de packaging, marketing et de distribution qui représentent plus de 60% du coût total:</p>
+            <ol><p>   - La vente et la promotion sont assurées par un réseau de vendeur à domicile </p></ol>
+            <ol><p>   - Les flacons sont standardisés (blancs pour les femmes et noirs pour les hommes)</p></ol>
+            <img src="Img/flacon-homme-femme.jpg" alt="image-flacon" height="300px">
+            <p>Qu'en est-il du parfum?</p>
+            <p>Contrairement à ce que l'on pourrait penser, les recettes ne sont pas la propriété de la marque qui les vends, mais celle de la parfumerire que les a créés. Chogan achète donc les mêmes recettes à ces parfumeries, puis fabrique le même produit.</p>
+            <p>La seule différences que l'on peut retrouver est sa concentration. En effet chogan a pris le parti d'avoir une concentration constante de 30% pour tous ses produits. Ce taux de concentration est parmis les plus haut, comme vous pouvez le voir sur notre guide (lien vers le guide).</p>
+            <p>Ainsi, Chogan propose une gamme de plus de 200 parfums équivalent à ceux que l'on peux trouvé en magasin, ce à un prix plus de deux fois moins important. Comme vous pouvez le voir dans nos catalogues</p>
+        </div>
+
+        <a href="index.html" class="bouton-accueil bouton-catalogues">
+            <span class="catalogues-text texte">NOS CATALOGUES</span>
+        </a>
+
+        <a href="les-guides.html" class="bouton-accueil bouton-guides">
+            <span class="guides-text texte">NOS GUIDES</span>
+        </a>
+
+
+    </section>
+
+    <footer>
+        <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo" width="150px">
+        <div class="texte">
+            <p>Vanessa CATALAN</p>
+            <p>06.27.51.22.56</p>
+            <p>vanessa.lafaurie@yahoo.fr</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
