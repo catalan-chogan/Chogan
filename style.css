@@ -432,6 +432,10 @@ button {
     font-size: 60px;
 }
 
+.texte-vendeur .contactez-moi{
+    text-decoration: underline;
+}
+
 .texte-vendeur p{
     font-size: 30px;
 }
@@ -497,5 +501,14 @@ button {
         background-position-y: 50% ;
     }
 
+    .texte-vendeur h1{
+        padding-top: 20px;
+        font-size: 40px;
+    }
+    
+    .texte-vendeur p{
+        font-size: 20px;
+    }
+    
 
 }
