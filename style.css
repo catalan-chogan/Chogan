@@ -427,6 +427,15 @@ button {
     cursor: pointer;
 }
 
+.texte-vendeur h1{
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+.texte-vendeur p{
+    font-size: 30px;
+}
+
 @media screen and (max-width: 900px) {
     .main{
         margin-left: 2%;
