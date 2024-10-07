@@ -469,6 +469,50 @@ h1{
     background-size: 110%;
 }
 
+.bouton-make-up-visage{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/make-up-visage.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-make-up-visage:hover {
+    background-size: 110%;
+}
+
+.bouton-make-up-yeux{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/make-up-yeux.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-make-up-yeux:hover {
+    background-size: 110%;
+}
+
+.bouton-make-up-ongles{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/make-up-ongles.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-make-up-ongles:hover {
+    background-size: 110%;
+}
+
+.bouton-make-up-levres{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/make-up-levres.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-make-up-levres:hover {
+    background-size: 110%;
+}
+
 .image-catalogue{
     width: 80%; /* l'image prend 80% de la largeur du conteneur */   
 }
