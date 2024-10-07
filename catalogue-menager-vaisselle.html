@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chogan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Img/logo-simple-rose.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="bandeau-haut">
+            <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo" width="150px">
+            <p>Votre conseillère</p>
+            <p>Vanessa CATALAN</p>
+            <p>06.27.51.22.56</p>
+            <p>vanessa.lafaurie@yahoo.fr</p>
+        </div>
+    
+        <nav>
+            <div class="nav-links">
+                <a href="presentation.html" class="bouton-bandeau">CHOGAN</a>
+                <a href="index.html" class="bouton-bandeau">LES CATALOGUES</a>
+                <a href="les-guides.html" class="bouton-bandeau">LES GUIDES</a>
+                <a href="bon-de-commande.html" class="bouton-bandeau">BON DE COMMANDE</a>
+                <a href="vendeur.html" class="bouton-bandeau">DEVENIR VENDEUR CHOGAN</a>
+            </div>
+            <div class="nav-tel">
+                <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo">
+                <img src="Img/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+            </div>
+        </nav>
+
+        
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks=document.querySelector(".nav-links")
+
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </header>
+    
+    <section class="main" >
+
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-01.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-02.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-03.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-04.jpg" class="image-catalogue">
+        <!--<img src="catalogue/menager/menager-vaisselle/menager-vaisselle-05.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-06.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-07.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-08.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-09.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-10.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-11.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-12.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-13.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-14.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-15.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-16.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-17.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-18.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-19.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-20.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-21.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-22.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-23.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-24.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-25.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-26.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-27.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-28.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-29.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-30.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-31.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-32.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-33.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-34.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-35.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-36.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-37.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-38.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-39.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-40.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-41.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-42.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-43.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-44.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-45.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-46.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-47.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-48.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-49.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-50.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-51.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-52.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-53.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-54.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-55.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-56.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-57.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-58.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-59.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-60.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-61.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-62.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-63.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-64.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-65.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-66.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-67.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-68.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-69.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-70.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-71.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-72.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-73.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-74.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-75.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-76.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-77.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-78.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-79.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-80.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-81.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-82.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-83.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-84.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-85.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-86.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-87.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-88.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-89.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-90.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-91.jpg" class="image-catalogue">
+        <img src="catalogue/menager/menager-vaisselle/menager-vaisselle-92.jpg" class="image-catalogue"> -->
+
+
+
+    </section>
+
+    <footer>
+        <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo" width="150px">
+        <div class="texte">
+            <p>Vanessa CATALAN</p>
+            <p>06.27.51.22.56</p>
+            <p>vanessa.lafaurie@yahoo.fr</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

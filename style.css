@@ -380,6 +380,95 @@ h1{
     z-index: 1; /* Assure que le texte est au-dessus de l'image de fond */
 }
 
+
+.bouton-menager-vaisselle{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-vaisselle.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-vaisselle:hover {
+    background-size: 110%;
+}
+
+.bouton-menager-assainissant{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-assainissant.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-assainissant:hover {
+    background-size: 110%;
+}
+
+.bouton-menager-linge{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-linge.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-linge:hover {
+    background-size: 110%;
+}
+
+.bouton-menager-sdb{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-sdb.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-sdb:hover {
+    background-size: 110%;
+}
+
+.bouton-menager-vitres{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-vitres.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-vitres:hover {
+    background-size: 110%;
+}
+
+.bouton-menager-cuisine{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-cuisine.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-cuisine:hover {
+    background-size: 110%;
+}
+
+.bouton-menager-sol{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-sol.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-sol:hover {
+    background-size: 110%;
+}
+
+.bouton-menager-accessoires{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-accessoires.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-menager-accessoires:hover {
+    background-size: 110%;
+}
+
 .image-catalogue{
     width: 80%; /* l'image prend 80% de la largeur du conteneur */   
 }
