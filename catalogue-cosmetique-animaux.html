@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chogan</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Img/logo-simple-rose.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="bandeau-haut">
+            <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo" width="150px">
+            <p>Votre conseillère</p>
+            <p>Vanessa CATALAN</p>
+            <p>06.27.51.22.56</p>
+            <p>vanessa.lafaurie@yahoo.fr</p>
+        </div>
+    
+        <nav>
+            <div class="nav-links">
+                <a href="presentation.html" class="bouton-bandeau">CHOGAN</a>
+                <a href="index.html" class="bouton-bandeau">LES CATALOGUES</a>
+                <a href="les-guides.html" class="bouton-bandeau">LES GUIDES</a>
+                <a href="bon-de-commande.html" class="bouton-bandeau">BON DE COMMANDE</a>
+                <a href="vendeur.html" class="bouton-bandeau">DEVENIR VENDEUR CHOGAN</a>
+            </div>
+            <div class="nav-tel">
+                <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo">
+                <img src="Img/menu-btn.png" alt="menu-hamburger" class="menu-hamburger">
+            </div>
+        </nav>
+
+        
+        <script>
+            const menuHamburger = document.querySelector(".menu-hamburger")
+            const navLinks=document.querySelector(".nav-links")
+
+            menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu')
+            })
+        </script>
+    </header>
+    
+    <section class="main" >
+
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-01.jpg" class="image-catalogue">
+        <!--<img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-02.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-03.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-04.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-05.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-06.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-07.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-08.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-09.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-10.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-11.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-12.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-13.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-14.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-15.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-16.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-17.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-18.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-19.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-20.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-21.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-22.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-23.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-24.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-25.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-26.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-27.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-28.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-29.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-30.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-31.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-32.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-33.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-34.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-35.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-36.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-37.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-38.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-39.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-40.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-41.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-42.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-43.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-44.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-45.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-46.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-47.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-48.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-49.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-50.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-51.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-52.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-53.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-54.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-55.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-56.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-57.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-58.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-59.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-60.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-61.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-62.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-63.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-64.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-65.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-66.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-67.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-68.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-69.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-70.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-71.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-72.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-73.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-74.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-75.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-76.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-77.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-78.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-79.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-80.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-81.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-82.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-83.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-84.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-85.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-86.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-87.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-88.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-89.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-90.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-91.jpg" class="image-catalogue">
+        <img src="catalogue/cosmetique/cosmetique-animaux/cosmetique-animaux-92.jpg" class="image-catalogue"> -->
+
+
+
+    </section>
+
+    <footer>
+        <img src="https://www.chogangroupspa.com/storage/img/logo_chogan.png?ver=20220505" alt="Chogan" class="logo" width="150px">
+        <div class="texte">
+            <p>Vanessa CATALAN</p>
+            <p>06.27.51.22.56</p>
+            <p>vanessa.lafaurie@yahoo.fr</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
