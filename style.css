@@ -448,13 +448,13 @@ h1{
 
 .bouton-menager-cuisine{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/menager-cuisine.jpg);
-    background-size: 100% auto;
+    background-size: 110% auto;
     background-position-y: 15% ;
     background-position-x: center; 
 }
 
 .bouton-menager-cuisine:hover {
-    background-size: 110%;
+    background-size: 120%;
 }
 
 .bouton-menager-sol{
