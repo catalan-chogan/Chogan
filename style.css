@@ -317,6 +317,16 @@ h1{
     background-size: 110%;
 }
 
+.bouton-bijoux{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%),url(Img/bijoux.jpg);
+    background-size: 100% auto;
+    background-position-y: 55% ;
+    background-position-x: center;
+}
+
+.bouton-bijoux:hover {
+    background-size: 110%;
+}
 .bouton-cosmetique{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/cosmetique.jpg);
     background-size: 100% auto;
@@ -468,6 +478,62 @@ h1{
 .bouton-menager-accessoires:hover {
     background-size: 110%;
 }
+
+.bouton-cosmetique-corps{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/cosmetique-corps.jpg);
+    background-size: 110% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-cosmetique-corps:hover {
+    background-size: 120%;
+}
+
+.bouton-cosmetique-visage{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/cosmetique-visage.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-cosmetique-visage:hover {
+    background-size: 110%;
+}
+
+.bouton-cosmetique-cheveux{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/cosmetique-cheveux.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-cosmetique-cheveux:hover {
+    background-size: 110%;
+}
+
+.bouton-cosmetique-pommades{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/cosmetique-pommades.jpg);
+    background-size: 110% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-cosmetique-pommades:hover {
+    background-size: 120%;
+}
+
+.bouton-cosmetique-animaux{
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/cosmetique-animaux.jpg);
+    background-size: 100% auto;
+    background-position-y: 15% ;
+    background-position-x: center; 
+}
+
+.bouton-cosmetique-animaux:hover {
+    background-size: 110%;
+}
+
 
 .bouton-make-up-visage{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/make-up-visage.jpg);
