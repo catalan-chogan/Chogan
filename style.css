@@ -45,24 +45,26 @@ header {
 }
 
 .bandeau-haut {
+    display: flex; /* Utiliser Flexbox */
     background-image: url(Img/Bandeau.jpg);
-    background-size: 100% auto;
-    background-position-y: 53%;
-    background-position-x: 80%;
+    background-size: cover; /* Assurer que l'image couvre toute la largeur */
+    background-position: center; /* Centrer l'image de fond */
     cursor: pointer;
     color: black;
     height: 200px;
-    margin: 0;
-    width: 100%;
+    margin: 0; /* Supprimer les marges par défaut */
+    width: 100vw; /* 100% de la largeur de l'écran */
     border-bottom: 3px solid var(--intermediare);
-    display: flex; /* Utiliser Flexbox */
-    align-items: flex-end; /* Aligner verticalement au bas */
-    justify-content: flex-end; /* Aligner horizontalement à droite */
-    text-align: right; /* Aligner le contenu à droite */
-    flex-direction: column; /* Pour afficher les éléments verticalement */
-    padding-bottom: 5px;
-    padding-top: 5px;
-    z-index: 1002;
+    padding: 0; /* Supprimer le padding pour éviter de décaler le fond */
+    position: relative; /* Position relative pour permettre un positionnement absolu interne */
+}
+
+.bandeau-haut-coordonnees {
+    position: absolute; /* Position absolue par rapport à .bandeau-haut */
+    bottom: 0; /* Positionner en bas */
+    right: 0; /* Positionner à droite */
+    padding: 10px; /* Ajouter un peu d'espace intérieur */
+    text-align: right; /* Aligner le texte à droite */
 }
 
 .bandeau-haut .logo{
