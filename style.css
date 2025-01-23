@@ -641,6 +641,34 @@ button {
     font-size: 30px;
 }
 
+.bouton-vendeur {
+    display: block;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    font-size: 32px;
+    color: var(--fonce);
+    border: solid 1px ;
+    border-color: var(--fonce);
+    border-radius: 10px;
+    padding: 10px 10px; /* Ajoute un espacement interne pour le texte */
+    text-align: center; /* Centre le texte horizontalement */
+    text-decoration: none; /* Supprime la soulignement par défaut du lien */
+    cursor: pointer; /* Curseur de souris de type pointer */
+    /*overflow: hidden; /* Cache toute partie de l'image qui dépasse du cadre */
+    /*transition: background-size 0.3s ease; /* Ajoute une transition fluide */
+    width:fit-content;
+    background-color:#e7d6cc;
+    /*background-color: var(--clair);*/
+    color: var(--fonce);
+}
+
+.bouton-vendeur:hover{
+    background-color: var(--intermediare);
+    color: var(--clair);
+}
+
 @media screen and (max-width: 900px) {
     .main{
         margin-left: 2%;
