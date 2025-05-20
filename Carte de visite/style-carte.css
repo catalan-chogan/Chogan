@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'Moontime';
+    src: url('fonts/Moontime-Font/MoonTime-Regular.otf') format('opentype'), /* Pour les fichiers OTF */
+         url('fonts/Moontime-Font/MoonTime-Regular.ttf') format('truetype'); /* Pour les fichiers TTF */
+    /* Ajoutez ici d'autres déclarations comme font-weight ou font-style si nécessaire */
+}
+
+:root{
+    --clair: #f5eddd;
+    --intermediare: #C4A591;
+    --fonce: #82401d;
+}
+
+.carte {
+    margin: 10px;
+    width: 8.8cm;
+    height: 5.8cm;
+    border: 2px solid #000;
+    background-color: var(--clair );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: Alice, sans-serif;
+    font-size:15px;
+}
+
+.verso {
+    margin: 10px;
+    width: 8.8cm;
+    height: 5.8cm;
+    border: 2px solid #000;
+    background-color: var(--clair );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.texte {
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+}
+
+.logo {
+    position: absolute;
+    width: 80%;
+    top: 7px;
+    left:25px;
+}
+
+p {
+    margin: 7px 0;
+}
+
+.nom {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.image-de-fond{
+    position:absolute;
+    bottom: 0;
+    left:0;
+    width: 140px;
+}
+
+.pres-qrcode {
+    margin-bottom: 0;
+    /*font-family: "Great Vibes";*/
+    font-size: 13px;
+    font-family: Alice, sans-serif;
+}
+
+.qrcode {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.code-parrainage {
+    font-size: 10px;
+    bottom: 8px;
+    font-family: Alice, sans-serif;
+}
