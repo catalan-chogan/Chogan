@@ -57,6 +57,7 @@ header {
     border-bottom: 3px solid var(--intermediare);
     padding: 0; /* Supprimer le padding pour éviter de décaler le fond */
     position: relative; /* Position relative pour permettre un positionnement absolu interne */
+    background-position-y: -620px; /* décale l'image vers la gauche */
 }
 
 .bandeau-haut-coordonnees {
@@ -232,13 +233,13 @@ h1{
 
 .bouton-parfums{
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.1) 30%, rgba(0, 0, 0, 0.62) 100%), url(Img/Flacon-parfum-femme.jpg);
-    background-size: 140% auto;
+    background-size: 100% auto;
     background-position-y: 15% ;
     background-position-x: center; 
 }
 
 .bouton-parfums:hover {
-    background-size: 150%;
+    background-size: 120%;
 }
 
 .bouton-rechargeable{
